@@ -21,11 +21,11 @@
       ],
       "boot_wait": "10s",
       "disk_size": 10140,
-      "guest_os_type": "Debian_64",
+      "guest_os_type": "Debian",
       "http_directory": "http",
-      "iso_checksum": "db79d463072da26b91c14e08b5a77a77bec9476ad1e5b0d2241228e4d59233f12c74477e77d427e407e1f45da4d2414c76367554352f57480fc7c00dde164028",
+      "iso_checksum": "44a54f80305caee1578fa7492093a4896785c4ddd0e25fb4a1b6891e683a517f8392e30ff441ba08d0038dceb60696e57cfecce2d2a5cd0a6afb415fa9330c48",
       "iso_checksum_type": "sha512",
-      "iso_url": "iso/debian-7.4.0-amd64-netinst.iso",
+      "iso_url": "iso/debian-7.4.0-i386-netinst.iso",
       "ssh_username": "vagrant",
       "ssh_password": "vagrant",
       "ssh_port": 22,
@@ -35,7 +35,7 @@
       "guest_additions_url": "iso/VBoxGuestAdditions_4.2.4.iso",
       "guest_additions_sha256": "3d7d909a0fe9ac5ffcca6afdd4142b88bad116d2ffed6e95588dbfbcf00ca5e9",
       "virtualbox_version_file": ".vbox_version",
-      "vm_name": "debian-7.4.0-amd64",
+      "vm_name": "debian-7.4.0-i386",
       "vboxmanage": [
         [ "modifyvm", "{{.Name}}", "--memory", "256" ],
         [ "modifyvm", "{{.Name}}", "--cpus", "2" ]
@@ -46,7 +46,7 @@
     {
       "type": "vagrant",
       "compression_level": "9",
-      "output": "debian-7.4.0-amd64_{{.Provider}}.box"
+      "output": "debian-7.4.0-i386_{{.Provider}}.box"
     }
   ],
   "provisioners": [

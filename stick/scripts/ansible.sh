@@ -2,7 +2,7 @@
 
 # Install ansible
 apt-get -y update
-apt-get install python-pip python-dev git -y
+apt-get install python-pip python-dev git sshpass -y
 pip install PyYAML jinja2 paramiko
 git clone https://github.com/ansible/ansible.git
 cd ansible
